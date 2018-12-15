@@ -1,0 +1,331 @@
+*{
+	font-family: Raleway;
+	margin: 0;
+	padding: 0;
+}
+body{
+	overflow-y: scroll;
+	height: 100%;
+	width: 100%;
+}
+li{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	height: 40px;
+	width: 120px;
+	top: 10px;
+	line-height: 40px;
+	right: 0;
+	margin-right: 20px;
+	border-radius: 10px;
+	transition: background-color 0.365s, color 0.365s, font-weight 0.365s;
+}
+li:hover{
+	cursor: pointer;
+	background-color: #000;
+	font-weight: 900;
+	color: #fff;
+}
+.scrollLi{
+	color: #fff;
+	transition: background-color 0.365s, color 0.365s, font-weight 0.365s;
+}
+.scrollLi:hover{
+	cursor: pointer;
+	background-color: #fff;
+	font-weight: 900;
+	color: #000;
+}
+.navCont{
+	position: absolute;
+	width: auto;
+	right: 0;
+}
+#mainNav{
+	position: fixed;
+	top: -60px;
+	width: 100%;
+	background-color: rgba(255,255,255,0.9);
+	height: 60px;
+	z-index: 2;
+	transition: top 0.365s;
+}
+.nameAbb{
+	position: absolute;
+	line-height: 60px;
+	left: 20px;
+	font-size: 24pt;
+	font-weight: 900;
+}
+.nameAbb:hover{
+	cursor: pointer;
+}
+#nameAbb2{
+	margin-left: 21px;
+	color: rgb(75,75,75);
+}
+.main{
+	position: absolute;
+	margin: auto;
+	height: 225px;
+	width: 225px;
+	left: 0;
+	right: 0;
+	top: 75px;
+	border-radius: 100%;
+	transition: box-shadow 0.365s;
+}
+.main:hover{
+	cursor: pointer;
+	box-shadow: 0 0 25px 2px #888;
+}
+.home{
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+.name{
+	text-align: center;
+	position: relative;
+	top: 50%;
+	font-size: 80px;
+}
+
+.under{
+	position: absolute;
+	background-color: #e74c3c;
+	width: 10%;
+	height: 10px;
+	left: 45%;
+	right: 0;
+	top: 67%;	
+	
+	border-radius: 5px;
+}
+
+.explore{
+	position: absolute;
+	width: 150px;
+	height: 40px;
+	background-color: #fff;
+	border: 3px solid #e74c3c; 
+	bottom: 10%;
+	left: 50%;
+	margin-left: -75px;
+	/*border-radius: 21px;*/
+	transition: background-color 0.365s, color 0.365s, font-weight 0.365s;
+	text-align: center;
+	line-height: 40px;
+	color: #e74c3c;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.explore:hover{
+	background-color: #e74c3c;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.page1{
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	background-color: #e74c3c;
+	height: 100%;
+	z-index: 2;
+}
+
+.generalHead{
+	font-weight: 900;
+	color: rgba(255,255,255,0.8);
+	position: relative;
+	text-align: center;
+	font-size: 72px;
+	text-transform: uppercase;
+	margin-top: 135px;
+	letter-spacing: 1.5pt;
+	transition: color 0.365s;
+	margin-bottom: 50px;
+}
+
+.generalHead:hover{
+	color: rgba(255,255,255,1);
+	cursor: pointer;
+}
+
+.aboutHead{
+	color: #fff;
+}
+
+.aboutPara{
+	position: relative;
+	text-align: center;
+	width: 50%;
+	margin: auto;
+	line-height: 1.6;
+	font-size: 18pt;
+	color: rgba(255,255,255,0.8);
+	transition: color 0.365s;
+	font-weight: 400;
+}
+
+.aboutPara:hover{
+	color: #fff;
+}
+
+
+.education{
+	position: relative;
+	margin: auto;
+	margin-left: 150px;
+	background-color: #fff;
+	display: inline-block;
+	height: 300px;
+	width: 300px;
+}
+
+.page2{
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	background-color: #fff;
+	height: auto;
+	padding-bottom: 100px;
+}
+
+#skillHead{
+	color: #16031f;
+}
+
+.skills{
+	position: relative;
+	height: 360px;
+	width: 25%;
+	display: inline-block;
+	background-color: #fff;
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 25px;
+	left: 2.5%;
+	margin-left: 5%;
+	z-index: 2;
+	transition: background-color 0.365s;
+}
+
+.skills:hover{
+	background-color: rgba(244,245,240,1);
+	cursor: pointer;
+	/*box-shadow: 0px 0px 20px #000;*/
+}
+
+.skillImg{
+	position: absolute;
+	height: 360px;
+	width: 360px;
+}
+
+.genSubHead{
+	position: absolute;
+	opacity: 0;
+	margin-top: -40px;
+	transition: opacity 0.365s, margin-top 0.365s;
+}
+
+.leftSubHead{
+	left: 20%;
+}
+
+.midSubHead{
+	left: 49.5%;
+}
+
+.rightSubHead{
+	left: 82.5%;
+}
+
+.skills:hover + .genSubHead{
+	opacity: 1;
+	margin-top: -10px;
+}
+
+.page3{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	background-color: #000;
+	z-index: 2;
+}
+
+.textGen{
+	position: relative;
+	margin: auto;
+	margin-bottom: 50px;
+	height: 0px;
+	width: 600px;
+	display: block;
+	line-height: 0px;
+	padding: 25px;
+	resize: none;
+	border: 5px solid rgba(255,255,255,0.6);
+	background-color: rgba(255,255,255,0);
+	color: #fff;
+	font-size: 16px;
+	transition: border 0.365s;
+}
+
+.textGen:hover{
+	border: 5px solid rgba(255,255,255,1);
+}
+
+.textGen:focus{
+	border: 5px solid rgba(255,255,255,1);
+	outline: none;
+}
+
+::placeholder{
+	color: rgba(255,255,255,1);
+}
+#subBut{
+	width: 200px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: background-color 0.365s, font-weight 0.365s;
+	z-index: 2;
+}
+#subBut:hover{
+	cursor: pointer;
+	background-color: #fff;
+	font-weight: 900;
+	color: #000;
+}
+.connectCont{
+	position: relative;
+	width: 75%;
+	height: 120px;
+	margin-top: 7%;
+	margin-bottom: 0;
+	left: 50%;
+	right: 0;
+	background-color: #000;
+	z-index: 2;
+}
+.connectImg{
+	position: relative;
+	height: 50px;
+	width: 50px;
+	left: 120px;	
+	margin-left: 100px;
+	padding-bottom: 50px; 
+	opacity: 0.5;
+	transition: opacity 0.365s;
+	z-index: 2;
+}
+.connectImg:hover{
+	opacity: 1;
+	cursor: pointer;
+}
